@@ -6,10 +6,13 @@ function Task({ deleteTask, task, index }) {
   const [isBinShown, setIsBinShown] = useState(false);
 
   useEffect(() => {
-    if (task.date.getDay == new Date().getDay) {
-      document.getElementsByClassName("task").backgroundColor = "red";
+    if (
+      task.priority &&
+      new Date(task.priority).getDate() === new Date().getDate()
+    ) {
+      document.getElementById(index).style.backgroundColor = "#f8d3c5";
     } else {
-      document.getElementsByClassName("task").backgroundColor = "blue";
+      document.getElementById(index).style.backgroundColor = "#a3b899";
     }
   });
 
@@ -26,6 +29,8 @@ function Task({ deleteTask, task, index }) {
       className="task"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={{ backgroundColor: "yellow" }}
+      id={index}
     >
       <h3> {task.text}</h3>
       <h3 className="priority">{task.priority}</h3>
