@@ -1,0 +1,22 @@
+.task {
+  padding: 20px 20px 20px 30px;
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.priority {
+  text-align: right;
+}
+.bin {
+  background-color: #ff5757;
+  flex: 0.3;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+img {
+  height: 30px;
+}

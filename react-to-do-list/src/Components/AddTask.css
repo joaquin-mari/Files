@@ -1,0 +1,43 @@
+.addTask {
+  padding: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+h3 {
+  padding-right: 10px;
+  flex: 1.5;
+}
+input {
+  border-color: #d1e8e2;
+  border-width: 1px;
+  height: 30px;
+  flex: 0.7;
+  margin: 0px 5px 0px 5px;
+}
+.date {
+  flex: 0.3;
+}
+.addTask button {
+  cursor: pointer;
+  font-size: 20px;
+  flex: 0.3;
+  background-color: #d1e8e2;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 5px;
+}
+.bin {
+  background-color: #ff5757;
+  flex: 0.3;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+img {
+  height: 30px;
+}

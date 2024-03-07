@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #f0efeb;
+}
+.container {
+  width: 600px;
+  margin-top: 15%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+}
