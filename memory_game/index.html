@@ -1,113 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- This is the h3 element for showing the timer -->
     <div class="timer">
-        <h3 class="time"></h3>
+      <h3 class="time"></h3>
     </div>
+    <!-- This is the start button for the start screen -->
     <div class="container">
-        <div class="heading">
-            <h1>START</h1>
+      <div class="heading">
+        <h1>START</h1>
+      </div>
+      <!-- This is the game screen -->
+      <div class="card-box">
+        <!-- These are all the card elements separated in rows
+        Probably not the best idea to create each one individually,
+        Thinking about it now that I have more knowledge I would have used a map function
+        and just create card components in react. 
+        I did this project a long time ago so this is the best solution I found for doing it 
+        at that time -->
+        <div class="row">
+          <div class="card">
+            <img class="image" id="card1" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card2" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card3" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card4" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card5" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card6" src="images/mistery.png" alt="" />
+          </div>
         </div>
-        <div class="card-box">
-            <div class="row">
-                <div class="card">
-                    <img class="image" id="card1" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card2" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card3" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card4" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card5" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card6" src="images/mistery.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <img class="image" id="card7" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card8" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card9" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card10" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card11" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card12" src="images/mistery.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <img class="image" id="card13" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card14" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card15" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card16" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card17" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card18" src="images/mistery.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <img class="image" id="card19" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card20" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card21" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card22" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card23" src="images/mistery.png" alt="">
-                </div>
-                <div class="card">
-                    <img class="image" id="card24" src="images/mistery.png" alt="">
-                </div>
-            </div>
+        <div class="row">
+          <div class="card">
+            <img class="image" id="card7" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card8" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card9" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card10" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card11" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card12" src="images/mistery.png" alt="" />
+          </div>
         </div>
-        <div class="end">
-            <h2>CONGRATULATIONS</h2>
-            <div class = "score">
-                <h3 class="result">TIME: </h3>
-                <h3 class="errors: ">ERRORS: </h3>
-            </div>
-            <button class="again">AGAIN</button>
+        <div class="row">
+          <div class="card">
+            <img class="image" id="card13" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card14" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card15" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card16" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card17" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card18" src="images/mistery.png" alt="" />
+          </div>
         </div>
+        <div class="row">
+          <div class="card">
+            <img class="image" id="card19" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card20" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card21" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card22" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card23" src="images/mistery.png" alt="" />
+          </div>
+          <div class="card">
+            <img class="image" id="card24" src="images/mistery.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--This is the end screen -->
+      <div class="end">
+        <h2>CONGRATULATIONS</h2>
+        <div class="score">
+          <h3 class="result">TIME:</h3>
+          <h3 class="errors">ERRORS:</h3>
+
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

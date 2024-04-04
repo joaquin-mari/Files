@@ -1,9 +1,13 @@
-/* eslint-disable react/prop-types */
 import "./Task.css";
 import { useEffect, useState } from "react";
 
+//This is the Task component which translates to each one of the tasks in my websites front-end
 function Task({ deleteTask, task, index }) {
+  //This useState will be used later to check if a mouse cursor is over it
   const [isBinShown, setIsBinShown] = useState(false);
+
+  //This is the useEffect that is used to check which color the tasks should have when the task is created
+  //remember that tasks are red if they are due today and green if not
 
   useEffect(() => {
     if (
@@ -16,6 +20,7 @@ function Task({ deleteTask, task, index }) {
     }
   });
 
+  //These two methods handle if there is a cursor over the task or not to set the useState to true or false
   function handleMouseEnter() {
     setIsBinShown(true);
   }
@@ -24,6 +29,9 @@ function Task({ deleteTask, task, index }) {
     setIsBinShown(false);
   }
 
+  //Here is where the component is created, it has a text describing the task, a priority which is basically the due date
+  //of the task and then an image of a trashcan emoji which will be shown only if the cursor is over the task
+  //when pressing on the trash the deleteTask method from the parameters is run and the task is deleted
   return (
     <div
       className="task"
