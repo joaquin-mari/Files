@@ -14,9 +14,9 @@ function Task({ deleteTask, task, index }) {
       task.priority &&
       new Date(task.priority).getDate() === new Date().getDate()
     ) {
-      document.getElementById(index).style.backgroundColor = "#f8d3c5";
+      document.getElementById(index).style.backgroundColor = "#ED3224";
     } else {
-      document.getElementById(index).style.backgroundColor = "#a3b899";
+      document.getElementById(index).style.backgroundColor = "#4C8055";
     }
   });
 
